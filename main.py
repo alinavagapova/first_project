@@ -1,16 +1,11 @@
-# 4. Создать словарь (не пустой) и отобразить все пары ключ значение
-#     если значение равно 'Alina'
+# # 5 Написать функцию которая будет считать дискриминант (через lambda и def)
+# def discriminant(a: int, b: int, c: int) -> int:
+#     d = b**2 - 4*a*c
+#     return d
+#
+# print(discriminant(5,6,7))
+# # result = discriminant(6, 3, 5)
+# # print(result)
 
-# это решение я нашла в интернете
-# test_dict = {'key_1': 'Alina', 'key_2': 'notAlina', 'key_3': 'one_more_Alina', 'key_4': 'Alina'}
-# alina_dict = test_dict.items()
-# for key, values in alina_dict:
-#     if values == 'Alina':
-#         print(key, '->', values)
-
-test_dict = {'key_1': 'Alina', 'key_2': 'notAlina', 'key_3': 'one_more_Alina', 'key_4': 'Alina'}
-for i, j in test_dict.items():
-    if j == 'Alina':
-        print(i, j)
-
-
+discriminant = lambda a, b, c: b**2 - 4*a*c
+print(discriminant(5, 6, 7))
